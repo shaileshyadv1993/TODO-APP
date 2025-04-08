@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TODO</title>
+  </head>
+  <body class="bg-slate-400 flex flex-col justify-center items-center h-screen">
+    <div
+      class="bg-slate-600 rounded-md shadow-2xl/100 flex flex-col justify-center w-md"
+    >
+      <h1 class="text-center font-bold text-3xl text-white m-5">TODO - App</h1>
+
+      <!-- Input section -->
+      <div class="flex flex-row justify-between mb-1 w-full">
+        <input
+          type="text"
+          name=""
+          id="task-input"
+          placeholder="New Task ..."
+          class="bg-slate-300 p-3 m-3 font-bold text-10px rounded-sm"
+        />
+        <button
+          class="m-3 font-bold text-xl bg-green-600 px-6 rounded-sm w-md hover:bg-green-500"
+          id="add-btn"
+        >
+          Add
+        </button>
+      </div>
+
+      <!-- No Task message -->
+      <h1
+        class="text-2xl font-bold text-orange-400 text-center mb-5"
+        id="no-task-message"
+      >
+        No Task to do.
+      </h1>
+
+      <!-- Display tasks -->
+      <ul
+        id="task-display"
+        class="flex flex-col justify-center gap-2 mb-5 w-full"
+      >
+        <!-- Tasks will be display dynamically -->
+      </ul>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
