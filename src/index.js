@@ -109,6 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Edit task
   function editTask(li) {
     let taskID = li.getElementsByTagName("i")[1].getAttribute("data-id");
+
+    li.getElementsByTagName("i")[1].setAttribute("class", "cursor-not-allowed");
     let searchTask = taskList.find((task) => task.id == taskID);
     indexValue = taskList.indexOf(searchTask);
     taskInput.value = searchTask.task;
